@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8n-oiv7.pt
+model: yolo11n.pt
 data: dataset/yolo.yaml
-epochs: 10
+epochs: 1
 time: null
 patience: 100
 batch: 16
@@ -13,7 +13,7 @@ cache: false
 device: cpu
 workers: 8
 project: runs
-name: dtfoods_yolov8n
+name: dtfoods_yolov8n2
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /Users/admin/Documents/DTFoods/runs/dtfoods_yolov8n
+save_dir: /Users/admin/Documents/DTFoods/runs/dtfoods_yolov8n2
